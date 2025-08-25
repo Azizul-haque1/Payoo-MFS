@@ -12,23 +12,27 @@
     <title>Payoo MFS</title>
 </head>
 
-<body class="bg-[#F4F5F7]  h-[100vh] flex justify-center items-center">
+<body class="bg-[#F4F5F7]  h-[100vh] flex flex-col justify-center items-center">
 
-    <form class="bg-white p-8 rounded-2xl">
-        <div class=""><label for="">Mobile Number</label> <br>
-            <input type="text" placeholder="Enter your number"
-                class="input mt-3 rounded-[32px] border-none bg-[#F4F5F7]  w-[340px]   " />
+    <div class="h-[130px] w-[300px] flex items-center justify-center bg-[url('./assets/bg.png')]">
+        <img src="./assets/Group.png" alt="">
+    </div>
+
+    <form class="bg-white p-8 rounded-2xl max-w-[450px] w-[350px]">
+        <div class=""><label class="font-semibold" for="">Mobile Number</label> <br>
+            <input id="mobile-number" type="number" placeholder="Enter your number"
+                class="input mt-3 rounded-[32px] border-none bg-[#F4F5F7]  w-full  " />
         </div>
-        <div class="mt-5"><label for="">4 Digit Pin</label> <br>
-            <input type="text" placeholder="Enter 4 Digit Pin"
-                class="input mt-3 rounded-[32px] border-none bg-[#F4F5F7] w-[340px]" />
+        <div class="mt-5"><label class="font-semibold" for="">4 Digit Pin</label> <br>
+            <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin"
+                class="input mt-3 rounded-[32px] border-none bg-[#F4F5F7] w-full" />
         </div>
-        <button class="btn btn-active btn-primary w-full mt-5 rounded-[32px] bg-[#0874F2] border-none">Primary</button>
+        <button type="button" id="btn-login"
+            class="btn btn-active btn-primary w-full mt-5 rounded-[32px] bg-[#0874F2] border-none">Login</button>
 
     </form>
-
-
-
+    
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
